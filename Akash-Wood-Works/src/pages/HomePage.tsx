@@ -18,7 +18,6 @@ import logoImg from '../imports/Logo.jpeg';
 
 export default function HomePage() {
 
-  const [showLogo, setShowLogo] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -131,7 +130,6 @@ export default function HomePage() {
 
           <div className="flex items-center gap-4">
             <button
-            onClick={() => setShowLogo(true)}
             className="hover:scale-105 transition-transform duration-300">
               <img
               src={logoImg}
