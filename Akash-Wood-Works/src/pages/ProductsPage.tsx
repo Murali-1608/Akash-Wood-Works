@@ -5,6 +5,7 @@ import plywoodBoxImg from '../imports/Plywood Box.jpeg';
 import batteryBoxImg from '../imports/Battery Box.jpeg';
 import woodenPalletImg from '../imports/2_Wooden Pallet.jpeg';
 import fourWayPalletImg from '../imports/4_Wooden Pallet.png';
+import sawWoodPowderImg from '../imports/Saw Wood Powder.jpeg';
 import pinewoodReaperImg from '../imports/Pinewood Reapers.png';
 
 import logoImg from '../imports/Logo.jpeg';
@@ -77,6 +78,21 @@ export default function ProductsPage() {
         'Designed for crate manufacturing, pallet production, industrial framing, and export packaging applications, these reapers provide excellent load-bearing capacity and dimensional stability under demanding conditions.',
         'Each piece is precision-cut and quality-checked to ensure smooth finishing, uniform sizing, and superior performance in heavy-duty industrial environments.',
         'Available in customized sizes and thicknesses to match specific packaging and manufacturing requirements.'
+      ]
+    },
+    {
+      id: 6,
+      name: 'SAW WOOD POWDER',
+      tagline: 'FINE GRADE SAW DUST • MULTI-PURPOSE APPLICATIONS • ECO-FRIENDLY',
+      image: sawWoodPowderImg,
+      content: [
+        'Our premium-quality Saw Wood Powder is manufactured from carefully processed natural wood, ensuring uniform particle size, low moisture content, and reliable performance across various industrial applications.',
+
+    'Widely used in biomass fuel production, particle board manufacturing, incense stick production, organic composting, and agricultural applications, our wood powder offers excellent versatility and consistent quality.',
+
+    'Processed under strict quality standards, the material is free from harmful contaminants and provides superior handling characteristics for industrial processing and large-scale manufacturing operations.',
+
+    'Available in customized quantities and packaging options to meet the specific requirements of manufacturers, distributors, and industrial customers.'
       ]
     }
   ];
@@ -183,19 +199,38 @@ export default function ProductsPage() {
                       <p className="text-amber-600 text-xs sm:text-sm font-medium uppercase tracking-wide">
                         {product.tagline}
                       </p>
-
+                      
                       <div className="flex flex-wrap gap-2 mt-4">
-                        <span className="bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-xs">
-                          Export Ready
-                        </span>
+                        
+                        {product.name === 'SAW WOOD POWDER' ? (
+                          <>
+                          <span className="bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-xs"> 
+                            Industrial Grade
+                          </span>
 
-                        <span className="bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-xs">
-                          Custom Sizes
-                        </span>
+                          <span className="bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-xs">
+                            Biomass Fuel
+                          </span>
 
-                        <span className="bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-xs">
-                          Heavy Duty
-                        </span>
+                          <span className="bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-xs">
+                            Premium Quality
+                          </span>
+                          </>
+                        ) : (
+                        <>
+                          <span className="bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-xs">
+                            Export Ready
+                          </span>
+
+                          <span className="bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-xs">
+                            Custom Sizes
+                          </span>
+
+                          <span className="bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-xs">
+                            Heavy Duty
+                          </span>
+                        </>
+                        )}
                       </div>
                     </div>
 

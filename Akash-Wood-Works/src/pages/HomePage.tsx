@@ -344,9 +344,9 @@ export default function HomePage() {
 
             {[
               {
-                name: 'PINEWOOD REAPER',
-                desc: 'High-quality preserved for different uses',
-                img: pinewoodReaperImg,
+                name: 'PLYWOOD BOX',
+                desc: 'Strong & durable boxes for heavy-duty packaging',
+                img: plywoodBoxImg,
               },
               {
                 name: 'BATTERY WOODEN BOX',
@@ -359,9 +359,9 @@ export default function HomePage() {
                 img: woodenPalletImg,
               },
               {
-                name: 'PLYWOOD BOX',
-                desc: 'Strong & durable boxes for heavy-duty packaging',
-                img: plywoodBoxImg,
+                name: 'PINEWOOD',
+                desc: 'High-quality preserved for different uses',
+                img: pinewoodReaperImg,
               },
             ].map((product, index) => (
               <div key={index}>
@@ -541,13 +541,13 @@ export default function HomePage() {
                     </p>
                     
                     <a
-                    href="https://maps.google.com/?q=3/825-C,Arasanatti,Bharathi+Nagar+Extension,Hosur,Tamil+Nadu+635126"
+                    href="https://maps.app.goo.gl/gntGGctqVN64f4UAA"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white hover:text-amber-500 transition-colors no-underline">
                       
                       <p>
-                        3/825-C, Arasanatti, Bharathi Nagar, Extension,
+                        3/825-c, Arasanatti, Bharathi Nagar, extension 
                         <br />
                         Hosur, Tamil Nadu 635126
                       </p>
